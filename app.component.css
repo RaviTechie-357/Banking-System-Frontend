@@ -1,0 +1,107 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px; /* Reduced padding for a more compact height */
+  background-color: #002147; /* Navy blue background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Logo */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo img {
+  height: 70px; /* Larger size for the bank logo */
+  margin-right: 10px;
+}
+
+.bank-name {
+  font-size: 30px; /* Larger font size for the bank name */
+  font-family: 'Brush Script MT', cursive;
+  color: #fff;
+}
+
+/* Location Icon */
+.location-icon {
+  height: 24px; /* Smaller size for the location icon */
+  vertical-align: middle; /* Aligns with the text */
+  margin-right: 5px;
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li {
+  margin: 0 15px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #ffffff; /* White text */
+  font-size: 18px; /* Font size for links */
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ff9900; /* Orange color on hover */
+}
+
+/* Navbar Button */
+.navbar-btn .btn-login {
+  background-color: #ff9900; /* Orange background */
+  color: #ffffff; /* White text */
+  padding: 10px 20px; /* Adjusted padding */
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px; /* Font size for the login button */
+  transition: background-color 0.3s ease;
+}
+
+.navbar-btn .btn-login:hover {
+  background-color: #e68a00; /* Darker orange on hover */
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
+
+  .navbar-btn {
+    margin-top: 10px;
+  }
+}
+
+.marquee {
+  margin-top: 15px;
+  padding: 10px;
+  background: #7a9bf7;
+  color: #ffffff;
+  font-size: 18px; /* Font size for marquee */
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
